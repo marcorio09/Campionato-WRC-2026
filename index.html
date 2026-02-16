@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campionato WRC 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555;
+        }
+
+        .tappe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .tappa {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tappa:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+        }
+
+        .tappa h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .tappa p {
+            opacity: 0.95;
+            font-size: 0.95em;
+        }
+
+        .tappa .periodo {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 0.9em;
+            opacity: 0.85;
+        }
+
+        .tappa.finale {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .tappa.finale h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .highlights {
+            background: #f8f9fa;
+            padding: 30px;
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .highlights li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .highlights li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 40px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .tappe-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tappa.finale {
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏁 Campionato WRC 2026 🏁</h1>
+            <p>Una stagione epica tra le curve più iconiche del mondo</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Benvenuti al Campionato Mondiale di Rally</h2>
+                <p>
+                    Il Campionato Mondiale di Rally (WRC) 2026 si prepara ad essere una stagione straordinaria, 
+                    portando i migliori piloti del mondo su alcuni dei circuiti più leggendari e affascinanti. 
+                    Dalle strade sinuose della Francia alle alpi svizzere, fino al primo evento asiatico dell'anno, 
+                    questo campionato promette emozioni, sfide tecniche e gare indimenticabili.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Le Tappe del Torneo</h2>
+                <div class="tappe-grid">
+                    <div class="tappa">
+                        <h3>🇫🇷 Monte Carlo Rally</h3>
+                        <p>
+                            Il leggendario Rallye Automobile Monte-Carlo apre la stagione 2026. 
+                            Le strade tortuose della Costa Azzurra mettono a dura prova i riflessi 
+                            dei piloti con condizioni meteorologiche spesso imprevedibili.
+                        </p>
+                        <span class="periodo">Gennaio 2026</span>
+                    </div>
+
+                    <div class="tappa">
+                        <h3>🇨🇭 Swiss Rally Challenge</h3>
+                        <p>
+                            Seconda tappa fondamentale della stagione, il rally svizzero si svolge 
+                            sulle maestose alpi. Terreni tecnici e innevati richiedono una gestione 
+                            perfetta dei pneumatici e una capacità eccezionale di guida.
+                        </p>
+                        <span class="periodo">Febbraio 2026</span>
+                    </div>
+
+                    <div class="tappa">
+                        <h3>🎯 Altre Tappe Internazionali</h3>
+                        <p>
+                            Tra febbraio e maggio, il campionato continua attraverso numerose 
+                            competizioni in Europa e oltre, con ogni rallies che presenta sfide 
+                            uniche e terreni differenti dal precedente.
+                        </p>
+                        <span class="periodo">Febbraio - Maggio 2026</span>
+                    </div>
+
+                    <div class="tappa finale">
+                        <h3>🇯🇵 Finale Mondiale in Giappone</h3>
+                        <p>
+                            L'evento conclusivo della stagione 2026 si terrà in Giappone, 
+                            un debutto storico per il WRC nell'Asia Orientale. 
+                            Un'occasione straordinaria per coronare la stagione su strade esotiche e affascinanti.
+                        </p>
+                        <span class="periodo">📅 31 Maggio 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Caratteristiche della Stagione 2026</h2>
+                <div class="highlights">
+                    <ul>
+                        <li><strong>Tecnologia Avanzata:</strong> Veicoli ibridi di ultima generazione e sistemi di sicurezza innovativi</li>
+                        <li><strong>Piloti Stellari:</strong> I migliori talenti mondiali si confronteranno in prove epiche</li>
+                        <li><strong>Percorsi Leggendari:</strong> Da Monte Carlo alle Alpi svizzere fino alle strade giapponesi</li>
+                        <li><strong>Condizioni Variabili:</strong> Neve, pioggia, asciutto - test definitivo di abilità e resistenza</li>
+                        <li><strong>Pubblico Mondiale:</strong> Milioni di appassionati seguiranno ogni momento della competizione</li>
+                        <li><strong>Sfida Finale Asiatica:</strong> Una conclusione spettacolare in Giappone il 31 maggio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Cosa Aspettarsi</h2>
+                <p>
+                    Il campionato 2026 rappresenta un punto di svolta per il WRC, con l'introduzione di 
+                    nuove tecnologie sostenibili e la storica espansione in Asia. Ogni prova sarà 
+                    determinante nella classifica generale, e la pressione raggiungerà il picco con il 
+                    finale giapponese. I piloti dovranno dimostrare non solo velocità e precisione, 
+                    ma anche adattabilità e resistenza mentale.
+                </p>
+                <p>
+                    Dalla gelida e tecnica sezione svizzera ai ritmi adrenalinici delle strade giapponesi, 
+                    il 2026 promette di essere un anno memorabile per gli amanti dei rally mondiali. 
+                    Non perdere nemmeno un momento di questa avventura straordinaria!
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Campionato Mondiale di Rally | Stagione Ufficiale WRC</p>
+            <p>Per informazioni ufficiali, visitare il sito www.wrc.com</p>
+        </footer>
+    </div>
+</body>
+</html>
